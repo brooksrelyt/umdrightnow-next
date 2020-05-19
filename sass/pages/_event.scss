@@ -1,0 +1,156 @@
+.event-info {
+	list-style: none;
+	padding-left: 0;
+	margin-bottom: 1.5em;
+	position: relative;
+
+	.slide-link {
+		margin-bottom: 0;
+	}
+
+	li {
+		&:first-child {
+			font-size: 13px;
+			line-height: 13px;
+			font-weight: bold;
+			letter-spacing: 1px;
+			text-transform: uppercase;
+			margin-bottom: 1em;
+			padding-left: 0;
+		}
+
+		font-size: 16px;
+		line-height: 26px;
+		text-transform: uppercase;
+		color: $umd_gray;
+		vertical-align: middle;
+		margin-bottom: 5px;
+		padding-left: 35px;
+
+		i {
+			margin-top: 3px;
+			font-size: 21px;
+			color: $umd_red;
+			vertical-align: middle;
+			position: absolute;
+			left: 0;
+		}
+	}
+
+	&.contact {
+		li:nth-child(n+2) {
+			text-transform: none;
+			padding-left: 0;
+		}
+
+	}
+	&.normal {
+		li:nth-child(n+2) {
+			text-transform: none;
+		}
+
+	}
+}
+
+.event-main {
+	margin-bottom: 1em;
+
+
+	h1 {
+		font-size: 34px;
+		line-height: 42px;
+		font-weight: 600;
+		color: $body-color;
+		letter-spacing: 0.5px;
+	}
+
+	.event-body {
+		margin-top: 1.5em;
+		// border-bottom: 1px solid $umd_offwhite;
+		.event-image {
+			max-height: 500px;
+			overflow: hidden;
+			margin-bottom: 25px;
+    
+			.img-description {
+				display: block;
+				margin: 5px 0;
+				padding: 8px;
+			}
+			.img-caption {
+				display: block;
+				margin: 5px 0;
+				padding: 8px;
+			}
+			img {
+				max-width: 100%
+			}
+		}
+
+		.event-btn {
+			.btn:not(:first-child) {
+			    margin-left: 15px;
+			}
+		}
+
+	}
+}
+
+
+.share-container {
+    margin-top: 1em;
+    // border-bottom: 1px solid $umd_offwhite;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+
+    .share-block {
+        margin-bottom: 0.75em;
+    }
+
+    .share-button {
+        cursor: pointer;
+        margin-bottom: 5px;
+
+        div {
+            margin: 0 auto;
+            display: block;
+        }
+    }
+}
+
+.sharing-button-link {
+    color: $umd_gray;
+    display: inline-block;
+    margin: 0 1em;
+
+    .sharing-button {
+        margin-bottom: 16px;
+
+        .sharing-button-inner {
+        	position: relative;
+		    display: block;
+
+		    .share-count {
+		        font-size: 10px;
+		        line-height: 10px;
+		        text-align: center;
+		        color: $umd_red;
+		        padding: 3px;
+		        border: 1px solid $umd_lightgray;
+		        letter-spacing: 0.5px;
+		        border-radius: 10px;
+		        position: absolute;
+		        bottom: -7px;
+		        left: 20px;
+
+		    }
+
+            svg {
+                fill: $textgray;
+                width: 24px;
+                height: 24px;
+            }
+        }
+    }
+}

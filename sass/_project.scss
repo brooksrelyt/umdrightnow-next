@@ -1,0 +1,583 @@
+#HnmHtUao6ItoMpRp {
+    width: 100%;
+}
+// homepage
+.tag {
+	display: inline-block;
+	// margin-bottom: 16px;
+
+	.tag-inner {
+		font-size: 13px;
+        line-height: 16px;
+        font-style: italic;
+        color: $umd_red;
+        display: inline;
+        border: 1px solid $border-color;
+        background-color: #fff;
+        margin-right: 10px;
+        padding: 2px 7px;
+        border-radius: 4px;
+	}
+}
+.tags-container {
+    position: relative;
+    display: block;
+    bottom: 0;
+    width: 100%;
+    // margin-top: 3em;
+    // border-top: 1px solid $umd_offwhite;
+    // padding-top: 2.25em;
+
+    .tags-inner {
+    	// margin-bottom: 1em;
+    	display: inline-block;
+    }
+
+	.tags {
+		// margin: 0 8px 8px 0;
+
+	    &.schools {
+	        h5 {
+	            border-top: none;
+	            padding-top: 0;
+	        }
+	    }
+
+	    h5 {
+	        font-size: 11px;
+	        line-height: 16px;
+	        font-weight: bold;
+	        text-transform: capitalize;
+	        display: inline-block;
+	        margin-right: 10px;
+	        margin-top: 0;
+	        margin-bottom: 0;
+	    }
+
+	    p {
+	        margin-bottom: 0;
+	        font-size: 11px;
+	        line-height: 16px;
+	        font-style: italic;
+
+	        color: $umd_gray;
+	    }
+
+	    .tag {
+	        display: inline-block;
+	        // margin-bottom: 10px;
+
+	        @include media-breakpoint-down(md) { margin-bottom: 8px; }
+
+	        a {
+	            font-size: 11px;
+	            line-height: 16px;
+	            font-style: italic;
+	            color: $umd_gray;
+	            display: inline;
+
+	            background-color: $umd_offwhite;
+	            margin-right: 10px;
+	            padding: 5px 10px;
+	            border-radius: 4px;
+
+	            // &:hover, &:focus {
+	            //     color: #000;
+	            //     background-color: $umd_silver;
+	            // }
+	        }
+	    }
+	}
+}
+
+.sidebar {
+    h1 {
+        font-size: 34px;
+        line-height: 42px;
+        font-weight: bold;
+        color: $body-color; 
+        letter-spacing: 1px;
+    }
+}
+
+.bb-med {
+    @include media-breakpoint-down(lg) {
+        border-bottom: 1px solid #e1e1e1;
+    }
+}
+.anchor {
+    height: 100%;
+    top: 0;
+    position: relative;
+}
+.split-pane {
+    padding-top: 1em;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 100vh;
+    // height: -moz-calc(100vh - 54px) !important;
+    // height: -webkit-calc(100vh - 54px) !important;
+    // height: -o-calc(100vh - 54px) !important;
+    // height: calc(100vh - 54px) !important;
+    min-height: 9em;
+
+    & > div {
+        position: relative;
+        top: 50%;
+        -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+
+        .text-content {
+            line-height: 1.6em;
+            margin-bottom: 1em;
+            padding: 15px 8em;
+
+            @include media-breakpoint-down(md) { 
+                padding: 15px 2em; 
+            }
+
+            h1 {
+                font-size: 42px;
+                line-height: 55px;
+                font-weight: bold;
+            }
+
+            p {
+                font-size: 16px;
+                line-height: 21px;
+            }
+            a {
+                font-size: 13px;
+                line-height: 16px;
+                font-weight: bold;
+                text-transform: uppercase;
+                letter-spacing: 1px;
+            }
+        }
+    }
+
+    &.right {
+        background-color: #666666;
+        background-image: url("https://brandportal.umd.edu/m/3ff03d9cb9e9fc29/Hero_web-CampusAerials_06052018_3783_Final-tif.jpg");
+        position: absolute;
+        right: 0;
+        z-index: -1;
+
+        @include media-breakpoint-down(lg) { margin-top: 47px; }
+        @include media-breakpoint-down(sm) { display: none; }
+    }
+}
+.welcome {
+	margin-top: -61px;
+	border-bottom: 1px solid $border-color;
+}
+
+.centered {
+    position: relative;
+}
+p.centered {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+	
+	font-size: 26px;
+	color: $umd_red;
+	text-transform: uppercase;
+	font-weight: bold;
+	letter-spacing: 1px;
+}
+
+// .results-stats {
+//     display: inline-block;
+//     width: 100%;
+//     padding: 0 1em;
+
+//     .stats {
+//         float: right;
+//     }
+// }
+
+
+
+
+.react-expand-collapse__content {
+    position: relative;
+    overflow: hidden;
+
+    .react-expand-collapse__body {
+        display: inline;
+    }
+
+    .react-expand-collapse__button {
+        color: $umd_red;
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        background-color: #fff;
+        cursor: pointer;
+        -webkit-tap-highlight-color: transparent;
+        width: 100%;
+        text-align: center;
+        padding-top: 1em;
+
+        &::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: -20px;
+            width: 20px;
+            height: 100%;
+            background: linear-gradient(to right, transparent 0, #fff 100%);
+        }
+    }
+}
+
+.react-expand-collapse--expanded .react-expand-collapse__button {
+    padding-left: 5px;
+    position: relative;
+    bottom: auto;
+    right: auto;
+    text-align: center;
+    width: 100%;
+    display: block;
+}
+
+.react-expand-collapse--expanded .react-expand-collapse__button:before {
+    content: none;
+}
+
+.card-tag {
+    span {
+        font-size: 13px;
+        line-height: 13px;
+        letter-spacing: 1.5px;
+        font-weight: 500;
+        color: $umd_red;
+        text-transform: uppercase;
+    }
+}
+
+.introduction {
+
+    h1 {
+        font-size: 42px;
+        line-height: 42px;
+        font-weight: bold;
+        color: $body-color;
+        
+
+        @include media-breakpoint-down(md) {
+            font-size: 21px;
+            line-height: 26px;
+            margin-bottom: 1em !important;
+        }
+
+    }
+
+    p {
+        font-size: 21px;
+        line-height: 42px;
+
+        @include media-breakpoint-down(md) {
+            font-size: 16px;
+            line-height: 21px;
+        }
+    }
+
+    .btn {
+        border-color: $umd_silver;
+        color: $body-color;
+        font-weight: bold;
+        font-size: 13px;
+        text-transform: uppercase;
+        padding-left: 20px;
+        padding-right: 20px;
+
+        &:hover, &:focus {
+            background-color: $umd_red;
+            color: #fff;
+            border-color: $umd_red;
+        }
+    }
+    .archive {
+        line-height: 53px;
+
+    }
+}
+
+// .layout-toggle {
+//     position: absolute;
+//     top: -126px;
+//     right: 1em;
+//     float: right;
+//     z-index: 100000000;
+//     cursor: pointer;
+
+//     a span {
+//         position: relative;
+//         top: 126px;
+//         right: 15px;
+//         width: 100%;
+//         z-index: 100000000;
+//     }
+// }
+
+.event {
+    @include media-breakpoint-down(sm) {
+        .col-3 {
+            padding-left: 0 !important;
+            padding-right: 0 !important;
+        }
+    }
+}
+.event-item {
+    margin-bottom: 1.5em;
+
+    h4 {
+        font-size: 21px;
+        line-height: 26px;
+        
+    }
+}
+.event-date {
+    display: block;
+    border: 1px solid $border-color;
+    background-color: #fff;
+    padding: 0.75rem;
+
+    .month {
+        font-size: 13px;
+        line-height: 13px;
+        text-transform: uppercase;
+        font-weight: bold;
+        text-align: center;
+        letter-spacing: 0.25;
+        margin: 0;
+    }
+
+    .date {
+        font-size: 34px;
+        line-height: 34px;
+        letter-spacing: 1px;
+        text-align: center;
+        color: $body-color;
+        margin: 0;
+    }
+}
+
+.event-title {
+    display: table-cell;
+    vertical-align: middle;
+
+    a {
+        display: block;
+        color: $body_color;
+        font-weight: 500;
+    }
+}
+
+
+.sub-info {
+    margin-bottom: 0.75em;
+    padding-left: 0;
+
+    li {
+        padding-right: 1.25em;
+        font-size: 16px;
+        line-height: 16px;
+        vertical-align: middle;
+        color: $body-color;
+        display: inline-block;
+        padding-left: 0;
+
+        @include media-breakpoint-down(md) {
+            display: block;
+            margin-bottom: 0.75em;
+        }
+
+        .date {
+            display: inline-block;
+        }
+
+        &.hide {
+            display: none;
+        }
+
+        span.fa-icon {
+            font-size: 21px;
+            line-height: 21px;
+            vertical-align: middle;
+            padding-right: 5px;
+            margin-top: -4px;
+        }
+    }
+}
+/* Scroll down icon */
+
+@-webkit-keyframes scroll-down-anim {
+    0%{ top: -7px; }
+    50%{ top: 3px; }
+    100%{ top: -7px; }
+}
+@-moz-keyframes scroll-down-anim {
+    0%{ top: -7px; }
+    50%{ top: 3px; }
+    100%{ top: -7px; }
+}
+@-o-keyframes scroll-down-anim {
+    0%{ top: -7px; }
+    50%{ top: 3px; }
+    100%{ top: -7px; }
+}
+@keyframes scroll-down-anim {
+    0%{ top: -7px; }
+    50%{ top: 3px; }
+    100%{ top: -7px; }
+}
+
+.local-scroll {
+    z-index: 200;
+    bottom: 0px;
+    position: absolute;
+    width: 98%;
+    background-color: rgba(255, 255, 255, 0.8);
+}
+.scroll-down{
+    width: 150px;
+    height: 43px;
+    margin-left: -75px;
+    line-height: 43px;
+    white-space: nowrap;
+    position: absolute;
+    bottom: 12px;
+    // bottom: 30px;
+    // bottom: 85px;
+    left: 50%;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-decoration: none;
+    text-align: center;
+    text-transform: uppercase;
+    color: rgba(0,0,0, 1) !important;
+
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+
+}
+.scroll-down:hover,
+.scroll-down:focus{
+    text-decoration: none;
+    letter-spacing: 6px;
+    color: rgba(0,0,0, 0) !important;
+}
+.scroll-down.static,
+.scroll-down.static{
+    color: rgba(0,0,0, .4) !important;
+}
+.scroll-down.static:hover,
+.scroll-down.static:focus{
+    letter-spacing: 3px;
+    color: rgba(0,0,0, .85) !important;
+}
+.scroll-down-icon{
+    width: 26px;
+    height: 100%;
+    margin-left: -13px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    border: 2px solid rgba(0,0,0, .35);
+
+    -moz-border-radius: 13px;
+    -webkit-border-radius: 13px;
+    border-radius: 13px;
+
+    -webkit-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -moz-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    -o-transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940); 
+    transition: all 500ms cubic-bezier(0.250, 0.460, 0.450, 0.940);
+
+    -webkit-animation: scroll-down-anim 1s infinite;
+    -moz-animation: scroll-down-anim 1s infinite;
+    -o-animation: scroll-down-anim 1s infinite;
+    animation: scroll-down-anim 1s infinite; 
+}
+
+.scroll-down-icon:after{
+    content: " ";
+    width: 2px;
+    height: 12px;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -1px;
+    background: rgba(0,0,0, .35);
+
+    -webkit-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);  
+    -moz-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    -o-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+    -ms-transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000); 
+    transition: all 0.27s cubic-bezier(0.000, 0.000, 0.580, 1.000);
+}
+.scroll-down:hover .scroll-down-icon{
+    background: rgba(255,255,255, .7);
+}
+
+.scroll-down:hover .scroll-down-icon:after{
+    background: rgba(0,0,0, .5);
+}
+
+.top-info {
+    .frequency {
+        display: inline-block;
+        // margin-bottom: 16px;
+        position: absolute;
+        top: 0;
+        right: 5px;
+
+        .frequency-tag {
+            font-size: 13px;
+            line-height: 16px;
+            font-style: italic;
+            color: $umd_red;
+            display: inline;
+            border: 1px solid $border-color;
+            background-color: #fff;
+            margin-right: 10px;
+            padding: 2px 7px;
+            border-radius: 4px;
+        }
+    }
+}
+
+
+div:empty {
+    &.col-md-6.d-flex.align-items-stretch {
+        display: none !important;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

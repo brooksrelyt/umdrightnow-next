@@ -1,0 +1,85 @@
+.navbar {
+	padding: 1.5em 1em;
+
+	.navbar-brand {
+		font-size: 26px;
+		line-height: 26px;
+		color: $body-color !important;
+		font-weight: bold;
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.navbar-nav {
+		li {
+			display: inline-block;
+			margin: 0 1em 0 0;
+
+			&:last-child {
+				margin: 0;
+			}
+		}
+	}
+
+	.nav-link {
+		color: $body-color !important;
+		border-bottom: 2px solid $white;
+		font-weight: 700;
+		letter-spacing: 0.75px;
+		text-transform: uppercase;
+		font-size: 14px;
+		line-height: 14px;
+		display: inline-block;
+
+		@include media-breakpoint-down(md) {
+			padding-left: 0;
+		}
+
+		&:hover,
+		&:focus {
+			color: $umd_red !important;
+			border-bottom: 2px solid $umd_red;
+		}
+
+		&:active {
+			color: $umd_dkred !important;
+			border-bottom: 2px solid $umd_dkred;
+		}
+	}
+
+	.navbar-text {
+		@include media-breakpoint-down(md) {
+			padding-left: 0 !important
+		}
+	}
+}
+
+
+.collapse {
+	position: absolute;
+	right: 15px;
+
+	@include media-breakpoint-down(md) {
+		position: relative;
+		right: 0;
+		border-top: 1px solid $border-color;
+		padding-top: 0.5em;
+		margin-top: 1em;
+	}
+}
+
+.navbar {
+	.btn {
+		padding: 5px 20px !important;
+		font-size: 13px;
+		line-height: 16px;
+		color: $body-color !important;
+		border-color: $umd_yellow;
+
+		&:hover, &:focus {
+			color: #fff !important;
+			border-color: $umd_red;
+			background-color: $umd_red;
+		}
+	}
+}

@@ -1,0 +1,31 @@
+@import "~bootstrap/scss/bootstrap";
+
+@import "variables";
+@import "normalize";
+@import "mixins";
+@import "base";
+
+// // Utilities
+@import "util/typography";
+@import "util/animations";
+
+// // COMPONENTS - Self-contained components
+@import "components/header";
+@import "components/footer";
+@import "components/tabs";
+@import "components/accordion";
+@import "components/modal";
+@import "components/hero-banner";
+@import "components/nav";
+@import "components/card";
+// @import "components/slider";
+
+// Pages - For page level type and layout styles
+@import "pages/event";
+
+// Search Styles
+@import "search";
+@import "components/hits-overwrite";
+
+// Styles Specific to new project
+@import "project";
